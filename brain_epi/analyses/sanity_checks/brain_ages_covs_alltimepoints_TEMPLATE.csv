@@ -1,0 +1,2 @@
+﻿SUBJID,SEX_brain,AGE_brain,AGE_gest,Centile2_predage,DevBrainAge_predage,DBN_predage,DunedinPACNI,ENIGMA_predage,Kaufmann_predage,PyBrainAge_predage,Pyment_predage,study
+,,,,,,,,,,,,"optional - this was used in ALSPAC as data came from 3 substudies & needs to be adjusted for in association analyses, other potential variables could be scanner or coil"

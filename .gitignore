@@ -1,0 +1,15 @@
+.DS_Store
+
+# Python
+__pycache__/
+.ipynb_checkpoints/
+
+# R
+.Rhistory
+.RData
+
+# Large workflow assets
+other_files/mind_dbn.sif
+other_files/ENIGMA-brainage-local.zip
+other_files/pyment-public.zip
+brain_epi/mri/scripts_models/pybrainage/ExtraTreesModel.onnx

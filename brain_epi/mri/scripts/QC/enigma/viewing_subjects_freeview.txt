@@ -1,0 +1,23 @@
+%the below are small snippets of code that you can use to view the 
+% FS output in freeview. These have been adapted for FreeSurfer version 6 
+%so might have to be altered to be used in more recent versions. 
+
+#### Checking QC in FreeView ###### 
+
+# ensure that FreeSurfer is sourced 
+
+# Step 1: Subject directory - indicate the path to the subject you want to view
+
+export SUBJECTS_DIR=/brain_epi/mri/output/sub1
+
+#Step 2: Internal view
+
+freeview -v $SUBJECTS_DIR/mri/orig.mgz $SUBJECTS_DIR/mri/aparc+aseg.mgz:colormap=lut:opacity=0.3
+
+#Step 3: external view
+freeview -f $SUBJECTS_DIR/surf/lh.pial:annot=aparc.annot:name=pial_aparc:visible=1 $SUBJECTS_DIR/surf/rh.pial:annot=aparc.annot:name=pial_aparc:visible=1 --viewport 3d
+
+
+# Step 4: focus on subcortical regions
+freeview -v $SUBJECTS_DIR/mri/orig.mgz $SUBJECTS_DIR/mri/aseg.mgz:colormap=lut:opacity=0.3
+
