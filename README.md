@@ -1,6 +1,8 @@
 # MIND_BrainAge-EpiAge
 
-This repository contains the code, documentation, workflows, and supporting materials used for the MIND Consortium BrainAge–EpiAge project. Pre-registration: https://doi.org/10.17605/OSF.IO/6CSM3
+This repository contains the code, documentation, workflows, and supporting materials used for the MIND Consortium BrainAge–EpiAge project.
+
+Pre-registration: https://doi.org/10.17605/OSF.IO/6CSM3
 
 ## Getting Started
 
