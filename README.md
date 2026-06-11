@@ -6,7 +6,7 @@ Pre-registration: https://doi.org/10.17605/OSF.IO/6CSM3
 
 ## Getting Started
 
-Get started by reading through *BrainAg-EpiAge_Overview.docx*. 
+Get started by reading through **BrainAge-EpiAge_Overview.docx**. 
 
 Overall, the repsository contains:
 
