@@ -8,7 +8,7 @@ Pre-registration: https://doi.org/10.17605/OSF.IO/6CSM3
 
 Get started by reading through **BrainAge-EpiAge_Overview.docx**. 
 
-Overall, the repsository contains:
+Overall, the repository contains:
 
 - `1.epi.preprocessing/` - Epigenetic preprocessing & QC workflows
 - `2.epi.postprocessing/` – Epigenetic postprocessing workflows
