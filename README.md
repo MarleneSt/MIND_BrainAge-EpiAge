@@ -18,6 +18,15 @@ Overall, the repository contains:
 - `6.analyses/` – Downstream analyses (cohort level)
 - `brain_epi/` – Shared scripts, models, and workflow resources
 
+## Interactive Dashboard
+
+An interactive dashboard for exploring model performance and brain–epigenetic age associations across development is available at:
+https://epi-brain-dashboard.streamlit.app
+
+The dashboard allows researchers to interactively filter results by cohort, age group, and model, and to download summary statistics as CSV files. It is optimised for desktop use. Note: the app may take ~30 seconds to load if it has been inactive (standard behaviour on Streamlit Community Cloud).
+
+Source code: https://github.com/VilteBaltra/epi-brain-dashboard
+
 ## Required External Files
 
 The following files are not stored in this repository because they exceed 100 MB.
