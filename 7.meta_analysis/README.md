@@ -75,7 +75,7 @@ archive/     superseded or one-off scripts (not part of the pipeline)
 
 | Script | Content |
 |---|---|
-| `01_main_meta_wMAE.R` | Reads and cleans all cohort-level files; performance (MAEw) meta-analyses for epigenetic clocks and brain age models, including moderators (see below); main epigenetic PAR – brain PAR association meta-analyses and moderators; restricted subsample of associations |
+| `01_main_meta_wMAE.R` | Reads and cleans all cohort-level files; performance (MAEw) meta-analyses for epigenetic clocks and brain age models, including moderators (age, age range overlap, tissue, processing level (minimal vs extracted), clock generation; see Methods and SM Table S1.7.1); main epigenetic PAR – brain PAR association meta-analyses and moderators; restricted subsample of associations |
 | `02_meta_pure_performance.R` | MAEw in the restricted subsample (full age range and tissue overlap) |
 | `03_meta_correlation.R` | Performance based on Pearson's r (correlation of predicted with chronological age), including moderators |
 | `04_meta_unweightedMAE.R` | Performance based on unweighted MAE |
@@ -96,24 +96,6 @@ archive/     superseded or one-off scripts (not part of the pipeline)
 | `19_plots_within_modality.R` | Within-modality correlation plots |
 | `20_fig4b_heatmap.py` | Fig 4B: heatmap of model-pair associations (Python) |
 | `21_plots_descriptives.py` | Fig 1: cohort descriptives (Python) |
-
-**Moderators** (scripts 01 and 03; see Methods and SM 1.7 for details)
-
-| Moderator | Outcome | Levels / definition |
-|---|---|---|
-| Age | performance, associations | sample mean age (continuous; for associations: mean age at MRI) |
-| Age range overlap | performance | % of the test-sample age range covered by the model's training age range (continuous) |
-| Tissue overlap | performance (epigenetic) | test tissue matches training tissue (yes / no; multi-tissue clocks count as matching) |
-| Tissue of training sample | performance (epigenetic) | cortex, blood, multi-tissue, buccal, cord blood |
-| Tissue of test sample | performance (epigenetic) | blood, saliva, buccal, cord blood, placenta |
-| Processing level (minimal vs extracted) | performance (brain) | minimally processed vs extracted imaging-derived features |
-| Clock generation | performance (epigenetic) | first-generation gestational, first, second, fourth generation (MAEw); additionally third generation (DunedinPACE) for Pearson's r |
-| Clock generation (2 levels) | associations | first vs next generation |
-| Clock generation (4 levels) | associations | first, second, third (DunedinPACE), fourth generation |
-| Saliva / buccal involvement | associations | saliva (or buccal) tissue in the test sample or the clock's training data (yes / no) |
-| Cortex training tissue | associations | clock trained (partly) on cortical tissue (yes / no) |
-| Time interval (revision, script 08) | associations | mean difference between age at MRI and age at DNAm assessment (continuous) |
-| Proportion of female participants (revision, script 13) | performance (MAEw), associations | % female per cohort and timepoint (continuous) |
 
 ## 5. Reproduction: results, tables and figures
 
