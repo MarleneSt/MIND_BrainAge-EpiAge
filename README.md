@@ -73,3 +73,7 @@ If you use this repository, please acknowledge the MIND Consortium and cite the 
 * The MIND consortium paper: Schuurmans, I. K. et al. (2026). Consortium profile: the methylation, imaging and NeuroDevelopment (MIND) consortium. Molecular Psychiatry, 31(2), 1177-1189. https://doi.org/10.1038/s41380-025-03203-w
 
 Additionally, this repository draws heavily on other open-access resources, including from the ENIGMA consortium and different brain age and epigenetic age models. Please ensure that you acknowledge the specific sources (papers, R packages, etc.) when used. We have provided links to papers and repositories where relevant. If you notice an omission, please don't hesitate to contact us. 
+
+## Contact
+
+For questions or problems, please open an issue on this GitHub repository or contact Esther Walton (E.Walton@bath.ac.uk).

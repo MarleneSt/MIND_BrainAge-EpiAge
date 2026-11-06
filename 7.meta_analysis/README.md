@@ -152,14 +152,3 @@ Further figure files in `results/plots/` (e.g. alternative layouts and versions 
 ## 6. License
 
 This code is released under the [MIT License](LICENSE).
-
-## 7. Paper
-
-This code accompanies:
-
-<!-- TO UPDATE with the published reference and DOI once available -->
-Staginnus, M., et al. Epigenetic and brain age across development: Performance and associations in the MIND consortium. *bioRxiv* (2026). https://doi.org/10.64898/2026.07.24.739162
-
-## 8. Contact
-
-For questions or problems, please open an issue on this GitHub repository or contact Esther Walton (E.Walton@bath.ac.uk).
