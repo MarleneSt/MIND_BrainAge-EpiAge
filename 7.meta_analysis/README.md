@@ -86,7 +86,7 @@ archive/     superseded or one-off scripts (not part of the pipeline)
 | `09_R2.1_age_effect_unweighted_MAE.R` | Age effect on unweighted MAE, adjusted for test-sample age range (revision) |
 | `10_R2.1_per_clock_age_effects.R` | Per-model age effects on unweighted MAE adjusted for age range (sensitivity analysis; shown alongside the original MAEw estimates) (revision) |
 | `11_R2.3_clock_fixed_effect.R` | Age range and tissue overlap moderators with epigenetic clock as fixed effect (revision) |
-| `12_R2.5_meta_with_intercept.R` | Omnibus tests of differences between models, model pairs and clock generations, from models with intercept (revision) |
+| `12_R2.5_meta_with_intercept.R` | Omnibus tests with intercept for differences between models (MAEw), model pairs and clock generations (associations) (revision) |
 | `13_R3.2_sex_moderator.R` | Proportion of female participants as moderator (revision) |
 | `14_R4.3_recalibrated_metrics.R` | Offset, slope and MAE after per-cohort linear recalibration (revision) |
 | `15_R4.3_rank_correlation.R` | Rank correlation between MAEw and recalibrated MAE (revision) |
