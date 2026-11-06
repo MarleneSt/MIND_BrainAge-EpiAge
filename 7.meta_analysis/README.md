@@ -84,7 +84,7 @@ archive/     superseded or one-off scripts (not part of the pipeline)
 | `07_meta_assoc_model1_and_3.R` | Meta-analyses of models 1 and 3 (sensitivity analyses for covariate adjustment) |
 | `08_R1_time_interval.R` | Time interval between DNAm and MRI assessment as moderator of the associations (revision) |
 | `09_R2.1_age_effect_unweighted_MAE.R` | Age effect on unweighted MAE, adjusted for test-sample age range (revision) |
-| `10_R2.1_per_clock_age_effects.R` | Per-clock age effects: MAEw vs unweighted MAE adjusted for age range (revision) |
+| `10_R2.1_per_clock_age_effects.R` | Per-model age effects on unweighted MAE adjusted for age range (sensitivity analysis; shown alongside the original MAEw estimates) (revision) |
 | `11_R2.3_clock_fixed_effect.R` | Age range and tissue overlap moderators with epigenetic clock as fixed effect (revision) |
 | `12_R2.5_meta_with_intercept.R` | Omnibus tests of differences between models, model pairs and clock generations, from models with intercept (revision) |
 | `13_R3.2_sex_moderator.R` | Proportion of female participants as moderator (revision) |
