@@ -1,0 +1,10 @@
+# outputs (recreated by run_all.R)
+/results/
+
+# R and system files
+.Rhistory
+.RData
+.Rproj.user/
+Rplots.pdf
+.DS_Store
+README.html

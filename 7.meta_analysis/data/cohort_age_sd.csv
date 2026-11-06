@@ -1,0 +1,82 @@
+"cohort","tp_key","domain","sd_age"
+"ALSPAC","15up_450k","brain",1.39
+"ALSPAC","15up_450k","epi",1.05
+"ALSPAC","15up_epic","brain",1.39
+"ALSPAC","15up_epic","epi",0.44
+"ALSPAC","cord","epi",0.03
+"ALSPAC","f7","epi",0.15
+"BHRC","t0","brain",1.85
+"BHRC","t0","epi",1.79
+"BHRC","t1","brain",1.81
+"BHRC","t1","epi",1.69
+"BHRC","t2","brain",1.85
+"BHRC","t2","epi",1.8
+"CannTeen","tp1","brain",0.49
+"CannTeen","tp1","epi",0.48
+"CannTeen","tp2","brain",0.58
+"DCHS","age6","brain",0.4
+"DCHS","age6","epi",0.08
+"FFCWS","tp1_450k","epi",0.43
+"FFCWS","tp1_epic","epi",0.39
+"FFCWS","tp2_450k","brain",0.52
+"FFCWS","tp2_450k","epi",0.66
+"FFCWS","tp2_epic","epi",0.62
+"FinnBrain","5y","brain",0.13
+"GenR","age10_450k","brain",0.59
+"GenR","age10_450k","epi",0.26
+"GenR","age10_epic","brain",0.59
+"GenR","age10_epic","epi",0.32
+"GenR","age14_epic","brain",0.63
+"GenR","age14_epic","epi",0.31
+"GenR","age18_epic","brain",0.74
+"GenR","age18_epic","epi",0.54
+"GenR","age6_450k","brain",0.99
+"GenR","age6_450k","epi",0.38
+"GenR","age6_epic","brain",0.99
+"GenR","age6_epic","epi",0.47
+"GenR","cord_450k","epi",0.03
+"GenR","cord_epic","epi",0.03
+"GUSTO","m3","epi",0.02
+"GUSTO","m9","epi",0.03
+"GUSTO","y4","brain",0.08
+"GUSTO","y4","epi",0.09
+"GUSTO","y6","brain",0.12
+"GUSTO","y6","epi",0.1
+"K2H Childhood","t0_blood","brain",2.02
+"K2H Childhood","t0_blood","epi",2.13
+"K2H Childhood","t0_saliva","brain",2.02
+"K2H Childhood","t0_saliva","epi",2.19
+"K2H Childhood","t2_blood","brain",1.42
+"K2H Childhood","t2_blood","epi",1.65
+"K2H Childhood","t2_saliva","brain",1.42
+"K2H Childhood","t2_saliva","epi",1.91
+"K2H Infancy","t0_k2h3_cordblood","epi",0.03
+"K2H Infancy","t0_k2h4_placenta","epi",0.03
+"MTwiNS","tp1_saliva","epi",1.49
+"MTwiNS","tp2_blood","brain",1.99
+"MTwiNS","tp2_blood","epi",2.11
+"MTwiNS","tp2_saliva","brain",1.99
+"MTwiNS","tp2_saliva","epi",2.37
+"MTwiNS","tp3_blood","epi",2.26
+"MTwiNS","tp3_saliva","epi",2.26
+"NICAP","t1","brain",0.43
+"NICAP","t1","epi",0.45
+"Oregon ADHD-1000","y1","brain",1.63
+"Oregon ADHD-1000","y1","epi",1.65
+"Oregon ADHD-1000","y2","brain",1.23
+"Oregon ADHD-1000","y3","brain",1.45
+"Oregon ADHD-1000","y3","epi",1.12
+"Oregon ADHD-1000","y6","epi",1.44
+"Oregon ADHD-1000","y8","brain",1.34
+"Oregon ADHD-1000","y8","epi",1.4
+"TAG","w1","brain",0.83
+"TAG","w1","epi",0.82
+"TAG","w2","brain",0.84
+"TAG","w3","brain",0.75
+"TAG","w4","brain",0.87
+"TAG","w5","brain",1.01
+"TAG","w6","brain",1.15
+"UCI Echo","0mo_blood","epi",0.04
+"UCI Echo","0mo_buccal","epi",0.04
+"UCI Echo","12mo_buccal","epi",0.05
+"UCI Echo","preschool","brain",1.03

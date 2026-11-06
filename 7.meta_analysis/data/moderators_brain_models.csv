@@ -1,0 +1,9 @@
+﻿model,processing,ML_model_brain,training_age_min_brain,training_age_max_brain
+Centile2,extracted,Support Vector Regression (SVR) with Radial Basis Function (RBF) Kernel,5,40
+DBN,minimal,Convolutional Neural Network built using the inception-resnetv2 framework ,3,95
+DevBrainAge,extracted,XGBoost,9,19
+DunedinPACNI,extracted,EN,45,45
+ENIGMA,extracted,ridge regression,18,75
+Kaufmann,extracted,gradient tree boosting using the xgboost package in R (sex-specific),3,96
+PyBrainAge,extracted,Extra Trees regression (ensemble learning family),2,100
+Pyment,minimal,Simple Fully Convolutional Network with a regression variant (SFCN-reg) [family of Convolutional Neural Networks (CNNs)],3,85

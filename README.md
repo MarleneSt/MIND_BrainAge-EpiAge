@@ -16,6 +16,7 @@ Overall, the repository contains:
 - `4.brain.mri.preprocessing/` – MRI preprocessing & QC workflows
 - `5.brain.ages/` – Generate a variety of brain ages 
 - `6.analyses/` – Downstream analyses (cohort level)
+- `7.meta_analysis/` – Consortium-level meta-analyses; reproduces all results, tables and figures of the paper (see `7.meta_analysis/README.md`)
 - `brain_epi/` – Shared scripts, models, and workflow resources
 
 ## Interactive Dashboard
@@ -65,7 +66,9 @@ Place in:
 
 ## Citation
 
-The publication for this project is currently in preparation. In the meantime, if you use this repository, please acknowledge the MIND Consortium and cite: 
+The preprint for this project is available on bioRxiv: Staginnus, M., et al. (2026). *Epigenetic and brain age across development: Performance and associations in the MIND consortium*. bioRxiv. https://doi.org/10.64898/2026.07.24.739162
+
+If you use this repository, please acknowledge the MIND Consortium and cite the preprint and: 
 * The project pre-registration: Staginnus, M. et al. (2025). *Associations between epigenetic and brain age across development: Findings from the MIND consortium*. Open Science Framework. https://doi.org/10.17605/OSF.IO/6CSM3
 * The MIND consortium paper: Schuurmans, I. K. et al. (2026). Consortium profile: the methylation, imaging and NeuroDevelopment (MIND) consortium. Molecular Psychiatry, 31(2), 1177-1189. https://doi.org/10.1038/s41380-025-03203-w
 
