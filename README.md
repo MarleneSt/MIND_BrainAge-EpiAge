@@ -6,7 +6,7 @@ Pre-registration: https://doi.org/10.17605/OSF.IO/6CSM3
 
 ## Reproducing the paper
 
-All results, tables and figures of the paper can be reproduced from the shareable cohort-level outputs in [`7.meta_analysis/`](7.meta_analysis/) with one command (`Rscript run_all.R`, about 3 hours). To recreate only the figures, download `figure_inputs.zip` from the [latest release](https://github.com/MarleneSt/MIND_BrainAge-EpiAge/releases/latest) (about 3 minutes). See the [`7.meta_analysis` README](7.meta_analysis/README.md) for instructions and a mapping of each figure and table to its script.
+All results, tables and figures of the paper can be reproduced from the cohort-level summary data included in `7.meta_analysis/` with one command (`Rscript run_all.R`, about 3 hours). To recreate only the figures (about 3 minutes), download `figure_inputs.zip` from the [latest release](https://github.com/MarleneSt/MIND_BrainAge-EpiAge/releases/latest). See the README in [`7.meta_analysis/`](7.meta_analysis/README.md) for instructions and which script produces each figure and table.
 
 ## Getting Started
 
