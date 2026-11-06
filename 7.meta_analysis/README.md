@@ -127,7 +127,7 @@ All figure files are in `results/plots/` unless stated otherwise.
 
 | Figure | Content | Script | File |
 |---|---|---|---|
-| 1 | Cohort descriptives (mean age ± SD, sample size, % female) | 21 | `plot_cohort_descriptives.png` |
+| 1 | Cohort descriptives | 21 | `plot_cohort_descriptives.png` |
 | 2A | Epigenetic clocks: model-wise and pooled MAEw | 17 | `plot_perf_epi_modelwise_plus_overall_meta_raw_combined_cohortcolors.png` |
 | 2B | Epigenetic clocks: model-wise and pooled Pearson's r | 17 | `plot_perf_epi_modelwise_plus_overall_pearson_combined_cohortcolors.png` |
 | 2C | Epigenetic clocks: MAEw by age bin | 17 | `plot_violin_perf_epi_age_brackets_morebrackets_k.png` |
