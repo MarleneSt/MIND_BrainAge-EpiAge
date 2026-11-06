@@ -94,7 +94,7 @@ archive/     superseded or one-off scripts (not part of the pipeline)
 | `17_plots_main.R` | Figures of performance and associations (Figs 2A–C, 3A–C, 4A, 4C; SM Fig S1) |
 | `18_plots_mean_age_effect_modelwise.R` | Figures of model-specific age effects on performance (Figs 2D, 3D) |
 | `19_plots_within_modality.R` | Figures of within-modality correlations (SM Figs S2, S3) |
-| `20_fig4b_heatmap.py` | Figure of model-pair associations as heatmap (Fig 4B) |
+| `20_fig4b_heatmap.py` | Figure of model pair associations as heatmap (Fig 4B) |
 | `21_plots_descriptives.py` | Figure of cohort descriptives (Fig 1) |
 
 ## 5. Reproduction: results, tables and figures
@@ -137,7 +137,7 @@ All figure files are in `results/plots/` unless stated otherwise.
 | 3C | Brain age models: MAEw by age bin | 17 | `plot_violin_perf_brain_age_wMAE_brackets_morebrackets_k.png` |
 | 3D | Brain age models: model-specific age effects on MAEw | 18 | `plot_brain_wMAE_modelwise_age_slopes_plus_pooled_by_generation.png` |
 | 4A | Epigenetic PAR – brain PAR associations per model pair | 17 | `plot_assoc_pairwise_with_margins_fixed_5cols_wide.png` |
-| 4B | Heatmap of model-pair associations | 20 | `plot_assoc_pairwise_heatmap.png` |
+| 4B | Heatmap of model pair associations | 20 | `plot_assoc_pairwise_heatmap.png` |
 | 4C | Associations by brain age bin | 17 | `plot_violin_assoc_brain_mean_age_brackets_modelcombi_meta_new.png` |
 | SM S1 | Epigenetic clocks: Pearson's r by age bin | 17 | `plot_violin_perf_epi_age_pearson_brackets.png` |
 | SM S2 | Within-modality correlations of epigenetic PARs | 19 | `results/within_modality/plots/corrplot_modelcombination_r_clustered_circle_epi-PAR.png` |
