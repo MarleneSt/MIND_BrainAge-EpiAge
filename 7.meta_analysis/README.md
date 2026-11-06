@@ -101,6 +101,8 @@ archive/     superseded or one-off scripts (not part of the pipeline)
 
 <!-- TO UPDATE when SM table and figure numbers are final -->
 
+### Results and tables
+
 | Manuscript result | Script(s) | Main output (in `results/`) |
 |---|---|---|
 | Epigenetic clock performance, MAEw (Results; SM 2.1–2.4; Table S9) | 01 | `perf_epi_wMAE_noDunedinDNAmTL_*_final/` |
@@ -119,9 +121,8 @@ archive/     superseded or one-off scripts (not part of the pipeline)
 | Proportion female moderator | 13 | `revision/R3.2/` |
 | Recalibrated offset, slope and MAE (SM recalibration tables) | 14, 15 | `revision/R4.3/` (`R4.3_table_*_recalibration.csv`) |
 | FDR-corrected p-values (all moderators, model-wise results) | 16 | `revision/fdr/` |
-| All figures | 17–20 | see table below |
 
-**Figures**
+### Figures
 
 All figure files are in `results/plots/` unless stated otherwise.
 
