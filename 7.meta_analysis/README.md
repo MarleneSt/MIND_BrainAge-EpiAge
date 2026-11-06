@@ -56,6 +56,8 @@ Rscript run_all.R
 
 Logs for each script, run times (`run_times.csv`) and R session information (`sessionInfo.txt`) are saved in `results/logs/`.
 
+**Figures only.** To recreate the figures without running the analyses, download `figure_inputs.zip` from the repository's Releases page, unzip it in this folder, and run `Rscript run_all.R 17` (runs scripts 17–21; about 3 minutes). The zip contains the analysis outputs the figure scripts read.
+
 **Run time.** About 3 hours on a standard desktop computer (Apple M4 Pro, 24 GB RAM). The longest scripts are `05` (≈ 85 min), `01` (≈ 50 min) and `07` (≈ 40 min); all other scripts take less than 5 minutes each. Most of the run time comes from the leave-one-cohort-out sensitivity analyses, which refit each model once per cohort (12–15 times); the main results do not depend on them.
 
 ## 4. Instructions for use
@@ -124,7 +126,7 @@ archive/     superseded or one-off scripts (not part of the pipeline)
 
 ### Figures
 
-All figure files are in `results/plots/` unless stated otherwise.
+All inputs are either in `data/` (cohort-level summary results) or are created by the analysis scripts 01–16; the figure scripts (17–21) only read these outputs, so running `run_all.R` (or the scripts in numerical order) provides every input needed. All figure files are in `results/plots/` unless stated otherwise.
 
 | Figure | Content | Script | File |
 |---|---|---|---|

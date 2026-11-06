@@ -2,6 +2,8 @@
 # last updated: 07/07/2026 - MS 
 
 
+# [REPRODUCIBILITY] all position_jitter() calls use seed = 1, so the jittered points (and figures) are identical on every run
+
 #### library ----
 library(tidyverse)
 library(stringr)
@@ -1414,7 +1416,7 @@ ggplot() +
     ),
     alpha = .65,
     size = 2.8,
-    position = position_jitter(height = .12, width = 0)
+    position = position_jitter(height = .12, width = 0, seed = 1)
   ) +
   
   geom_segment(
@@ -1604,7 +1606,7 @@ ggplot() +
     ),
     alpha = .65,
     size = 2.8,
-    position = position_jitter(height = .12, width = 0)
+    position = position_jitter(height = .12, width = 0, seed = 1)
   ) +
   
   geom_segment(
@@ -1812,7 +1814,7 @@ ggplot() +
     ),
     alpha = .45,
     size = 2,
-    position = position_jitter(height = .12)
+    position = position_jitter(height = .12, seed = 1)
   ) +
   
   # meta CIs
@@ -2005,7 +2007,7 @@ ggplot() +
     ),
     alpha = .45,
     size = 2,
-    position = position_jitter(height = .12)
+    position = position_jitter(height = .12, seed = 1)
   ) +
   
   # meta CIs
@@ -2231,7 +2233,7 @@ ggplot() +
     ),
     alpha = .45,
     size = 2,
-    position = position_jitter(height = .12)
+    position = position_jitter(height = .12, seed = 1)
   ) +
   
   geom_segment(
@@ -2466,7 +2468,7 @@ ggplot() +
     ),
     alpha = .45,
     size = 2,
-    position = position_jitter(height = .12)
+    position = position_jitter(height = .12, seed = 1)
   ) +
   
   geom_segment(
@@ -2704,7 +2706,7 @@ ggplot() +
     ),
     alpha = .45,
     size = 2,
-    position = position_jitter(height = .12)
+    position = position_jitter(height = .12, seed = 1)
   ) +
   
   geom_segment(
@@ -3268,7 +3270,7 @@ ggplot() +
     ),
     alpha = .45,
     size = 2,
-    position = position_jitter(height = .12)
+    position = position_jitter(height = .12, seed = 1)
   ) +
   
   geom_segment(
@@ -3785,7 +3787,7 @@ ggplot() +
     ),
     alpha = .45,
     size = 2,
-    position = position_jitter(height = .12)
+    position = position_jitter(height = .12, seed = 1)
   ) +
   
   geom_segment(
@@ -4531,7 +4533,7 @@ ggplot() +
     ),
     alpha = .45,
     size = 2,
-    position = position_jitter(height = .12)
+    position = position_jitter(height = .12, seed = 1)
   ) +
   
   # pooled meta-analysis CIs
@@ -4891,7 +4893,7 @@ p <- ggplot() +
     ),
     alpha = .45,
     size = 2,
-    position = position_jitter(height = .12)
+    position = position_jitter(height = .12, seed = 1)
   ) +
   
   # pooled meta-analysis CIs
