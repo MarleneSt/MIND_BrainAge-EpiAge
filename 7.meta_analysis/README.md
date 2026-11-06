@@ -126,7 +126,7 @@ archive/     superseded or one-off scripts (not part of the pipeline)
 
 ### Figures
 
-All figure files are saved in `results/plots/`, except SM Figures S2 and S3 (`results/within_modality/plots/`). To recreate the figures without running the analyses, see "Figures only" in section 3.
+All figure files are saved in `results/plots/`, except SM Figures S2 and S3 (`results/within_modality/plots/`). To recreate the figures without running the analysis (scripts 01–16), see "Figures only" in section 3.
 
 | Figure | Content | Script | File |
 |---|---|---|---|
