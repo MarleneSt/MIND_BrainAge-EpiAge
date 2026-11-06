@@ -126,7 +126,7 @@ archive/     superseded or one-off scripts (not part of the pipeline)
 
 ### Figures
 
-All inputs are either in `data/` (cohort-level summary results) or are created by the analysis scripts 01–16; the figure scripts (17–21) only read these outputs, so running `run_all.R` (or the scripts in numerical order) provides every input needed. All figure files are in `results/plots/` unless stated otherwise.
+All figure files are saved in `results/plots/`, except SM Figures S2 and S3 (`results/within_modality/plots/`). To recreate the figures without running the analyses, see "Figures only" in section 3.
 
 | Figure | Content | Script | File |
 |---|---|---|---|
@@ -143,8 +143,8 @@ All inputs are either in `data/` (cohort-level summary results) or are created b
 | 4B | Heatmap of model pair associations | 20 | `plot_assoc_pairwise_heatmap.png` |
 | 4C | Associations by brain age bin | 17 | `plot_violin_assoc_brain_mean_age_brackets_modelcombi_meta_new.png` |
 | SM S1 | Epigenetic clocks: Pearson's r by age bin | 17 | `plot_violin_perf_epi_age_pearson_brackets.png` |
-| SM S2 | Within-modality correlations of epigenetic PARs | 19 | `results/within_modality/plots/corrplot_modelcombination_r_clustered_circle_epi-PAR.png` |
-| SM S3 | Within-modality correlations of brain age PARs | 19 | `results/within_modality/plots/corrplot_modelcombination_r_clustered_circle_brain-PAR.png` |
+| SM S2 | Within-modality correlations of epigenetic PARs | 19 | `within_modality/plots/corrplot_modelcombination_r_clustered_circle_epi-PAR.png` |
+| SM S3 | Within-modality correlations of brain age PARs | 19 | `within_modality/plots/corrplot_modelcombination_r_clustered_circle_brain-PAR.png` |
 
 <!-- TO UPDATE: figure numbers once final -->
 
