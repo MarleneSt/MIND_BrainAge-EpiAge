@@ -91,11 +91,11 @@ archive/     superseded or one-off scripts (not part of the pipeline)
 | `14_R4.3_recalibrated_metrics.R` | Offset, slope and MAE after per-cohort linear recalibration (revision) |
 | `15_R4.3_rank_correlation.R` | Rank correlation between MAEw and recalibrated MAE (revision) |
 | `16_fdr.R` | FDR correction of all moderator and model-wise tests |
-| `17_plots_main.R` | Main figures (performance and associations) |
-| `18_plots_mean_age_effect_modelwise.R` | Model-specific age effects on performance |
-| `19_plots_within_modality.R` | Within-modality correlation plots |
-| `20_fig4b_heatmap.py` | Fig 4B: heatmap of model-pair associations (Python) |
-| `21_plots_descriptives.py` | Fig 1: cohort descriptives (Python) |
+| `17_plots_main.R` | Figures of performance and associations (Figs 2A–C, 3A–C, 4A, 4C; SM Fig S1) |
+| `18_plots_mean_age_effect_modelwise.R` | Figures of model-specific age effects on performance (Figs 2D, 3D) |
+| `19_plots_within_modality.R` | Figures of within-modality correlations (SM Figs S2, S3) |
+| `20_fig4b_heatmap.py` | Figure of model-pair associations as heatmap (Fig 4B) |
+| `21_plots_descriptives.py` | Figure of cohort descriptives (Fig 1) |
 
 ## 5. Reproduction: results, tables and figures
 
