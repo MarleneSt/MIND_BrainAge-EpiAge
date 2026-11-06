@@ -65,13 +65,11 @@ Logs for each script, run times (`run_times.csv`) and R session information (`se
 ```
 data/        cohort-level input files (one folder per cohort, as returned by the cohort-level scripts)
              + moderator tables (moderators_*_R.csv, moderators_*_models.csv)
-             + cohort_age_sd.csv (SD of age per cohort x timepoint; used by 14)
-             + descriptives_table_20260625.csv (cohort descriptives; used by 21)
+             + cohort_age_sd.csv (SD of age per cohort x timepoint; used by script 14)
+             + descriptives_table_20260625.csv (cohort descriptives; used by script 21)
 results/     all outputs (created by the scripts)
 archive/     superseded or one-off scripts (not part of the pipeline)
 ```
-
-The moderator tables were first generated from the cohort descriptives (`archive/00_prep_descriptives_and_moderators.R`) and then completed by hand (tissue moderators; files ending in `_R.csv`). `cohort_age_sd.csv` was extracted once from SM Table S5 with `archive/make_cohort_age_sd.R`. `descriptives_table_20260625.csv` contains the cohort descriptives per cohort and timepoint (sample size, % female, mean age and mean predicted ages); the same descriptives are reported in SM Table S5.
 
 **Scripts**
 
