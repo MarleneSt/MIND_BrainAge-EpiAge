@@ -211,7 +211,7 @@ write.csv(sex_moderator, file.path(out_dir, "R3.2_perc_female_moderator.csv"), r
 
 
 #### [NEW] SM figure: associations by % female ----
-# Points: mean association per cohort x timepoint (across all model pairs), labelled by cohort.
+# Points: mean association per cohort x timepoint (across all model pairs), labelled by cohort and mean age.
 # Line:   fitted meta-regression from model (3), all samples, with 95% CI.
 library(ggrepel)   # labels that do not overlap
 
@@ -220,7 +220,18 @@ sample_means <- mod2_eff2 %>%
   group_by(cohort, timepoint) %>%
   summarise(mean_assoc  = mean(RLM_Estimate_scaled),
             perc_female = first(perc_female),
-            .groups = "drop")
+            mean_age_epi = first(mean_age_epi),
+            array       = sub("v[12]$", "", first(array)),   # EPICv1/EPICv2 -> EPIC
+            tissue      = first(tissue_test),
+            .groups = "drop") %>%
+  # label: cohort + mean age at DNAm assessment (per wave); array or tissue added
+  # where one wave was split into several samples (e.g. GenR 450k / EPIC, K2H blood / saliva)
+  mutate(wave = sub("_(450k|epic|blood|saliva)$", "", timepoint)) %>%
+  group_by(cohort, wave) %>%
+  mutate(age   = round(mean(mean_age_epi)),
+         split = if (n() == 1) "" else if (n_distinct(array) > 1) paste0(" (", array, ")") else paste0(" (", tissue, ")")) %>%
+  ungroup() %>%
+  mutate(label = paste0(sub(" Childhood$", "", cohort), " ", age, "y", split))   # "K2H Childhood" shortened to "K2H"
 
 # fitted line from model (3)
 # 100 evenly spaced % female values from lowest to highest in the data (x-positions of the line)
@@ -233,15 +244,19 @@ fit  <- data.frame(perc_female = grid, pred = pred$pred, ci.lb = pred$ci.lb, ci.
 # with individual dots
 p_sex <- ggplot() +
   # all individual estimates (each model pair in each sample), faint, behind everything
-  geom_jitter(data = mod2_eff2, aes(x = perc_female, y = RLM_Estimate_scaled),
-              width = 0.4, height = 0, size = 0.6, alpha = 0.15, colour = "grey60") +
+  geom_point(data = mod2_eff2, aes(x = perc_female, y = RLM_Estimate_scaled),
+             position = position_jitter(width = 0.4, height = 0, seed = 1),   # seed: same figure on every run
+             size = 0.6, alpha = 0.15, colour = "grey60") +
   geom_ribbon(data = fit, aes(x = perc_female, ymin = ci.lb, ymax = ci.ub), fill = "grey85", alpha = 0.7) +
   geom_line(data = fit, aes(x = perc_female, y = pred)) +
   geom_point(data = sample_means, aes(x = perc_female, y = mean_assoc), size = 2.5, colour = "grey20") +
   # all labels shown (max.overlaps = Inf); lines connect labels to their point
-  geom_text_repel(data = sample_means, aes(x = perc_female, y = mean_assoc, label = cohort),
-                  size = 2.6, max.overlaps = Inf, min.segment.length = 0,
-                  box.padding = 0.4, segment.colour = "grey50") +
+  # labels on a white background so they stay readable over the fitted line and dots
+  geom_label_repel(data = sample_means, aes(x = perc_female, y = mean_assoc, label = label),
+                  size = 2.5, max.overlaps = Inf, min.segment.length = 0,
+                  fill = scales::alpha("white", 0.85), label.padding = 0.12,
+                  box.padding = 0.5, point.padding = 0.3, force = 3, force_pull = 0.5,
+                  segment.colour = "grey50", seed = 1) +   # seed: same label layout on every run
   geom_hline(yintercept = 0, linetype = "dotted") +
   labs(x = "Female participants (%)",
        y = "Epigenetic PAR - brain PAR association (standardised beta)") +
